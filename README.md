@@ -1,18 +1,15 @@
 # Geyser Standalone - Unofficial Docker image
 
-[GeyserMC](https://geysermc.org/) allow clients from Minecraft Bedrock Edition to join your Minecraft Java server.
+[GeyserMC](https://geysermc.org/) allows clients from Minecraft Bedrock Edition to join your Minecraft Java server.
 With this Docker image, you can launch a GeyserMC standalone server, to proxy your Minecraft Bedrock's players connection, to your Minecraft Java Edition server.
 
 **This is an unofficial Docker Image originally developed by [Hiob](https://hiob.fr) for [Nefald Community](https://nefald.fr)**.
 
 ## Geyser: Documentation and setup
-Always refer you to [GeyserMC documentation](https://github.com/GeyserMC/Geyser/wiki).
+Always refer to the official [GeyserMC documentation](https://github.com/GeyserMC/Geyser/wiki).
 
-## Usage 
-You can find support and updated documentation on our [Gitlab](https://git.nefald.fr/docker/geyser), also you can discuss and join us on our [Discord](https://nfald.fr/discord).
-
-### Docker-compose
-Here a sample of `docker-compose.yml` with **Geyser** and **Paper**:
+## Docker-compose
+Here a sample of `docker-compose.yml` with **Geyser**:
 
 ```
 version: '3.7'
