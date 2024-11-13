@@ -69,9 +69,9 @@ ENV GEYSER_MTU "1400"
 ENV GEYSER_USE_DIRECT_CONNECTION "true"
 ENV GEYSER_DISABLE_COMPRESSION "true"
 
-RUN apt-get update && apt-get install -y gettext-base && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y gettext-base curl && rm -rf /var/lib/apt/lists/*
 
-ADD https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/standalone /opt/Geyser.jar
+RUN curl -L -o /opt/Geyser.jar https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/standalone
 
 COPY start.sh /usr/local/bin/start.sh
 COPY config.yml.template /opt/config.yml.template
